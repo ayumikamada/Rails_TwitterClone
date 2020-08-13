@@ -1,0 +1,17 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: rails_tsubuyaki_development
+test:
+  <<: *default
+  database: rails_tsubuyaki_test
+production:
+  <<: *default
+  database: rails_tsubuyaki_production
+  username: rails_tsubuyaki
+  password: <%= ENV['RAILS_TSUBUYAKI_DATABASE_PASSWORD'] %>
