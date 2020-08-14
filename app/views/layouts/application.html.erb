@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsTsubuyaki</title>
+    <title>つぶやき</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,25 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="container">
+
+      <header class="header clearfix">
+        <a href=""><img src="/assets/piso20200813225825.png" class="logo_image"></a>
+          <nav>
+            <ul class="top_menu clearfix">
+              <li>つぶやき</li>
+            </ul>
+          </nav>
+      </header>
+
+      <div class="wrapper clearfix">
+      <%= yield %>
+      </div>
+
+      <footer class="footer">
+      </footer>
+    </div>
+
   </body>
 </html>
