@@ -1,5 +1,7 @@
 <h2>つぶやき一覧</h2>
+
 <p><%= notice %></p>
+
 <table>
 <% @tsubuyakis.each do |tsubuyaki| %>
   <tr>
@@ -11,4 +13,5 @@
 <% end %>
 </table>
 <br>
+
 <%= link_to '新しく投稿する', new_tsubuyaki_path %>
