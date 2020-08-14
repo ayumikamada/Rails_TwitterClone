@@ -39,7 +39,6 @@ body {
 
 .top_menu {
     position: relative;
-    left: 35%;
     float: left;
 }
 
@@ -72,4 +71,9 @@ body {
     content: "";
     display: block;
     clear: both;
+ }
+
+ input[type="text"] {
+     width: 700px;
+     height: 60px;
  }

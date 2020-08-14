@@ -11,11 +11,11 @@
     <% end %>
 
     <div class="tsubuyaki_content">
-      <%= form.label :content, '本文' %><br><br>
+      <%= form.label :content, '投稿内容' %><br><br>
       <%= form.text_field :content %>
     </div><br>
 
     <%= form.submit '投稿'%>
   <% end %>
-
+  <br><br>
   <%= link_to "一覧画面にもどる", tsubuyakis_path %>
