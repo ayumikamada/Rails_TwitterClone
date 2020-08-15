@@ -6,7 +6,7 @@ class TsubuyakisController < ApplicationController
   end
 
   def index
-    @tsubuyakis = Tsubuyaki.all
+    @tsubuyakis = Tsubuyaki.all.order(created_at: :desc)
   end
 
   def new
