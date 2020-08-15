@@ -2,16 +2,17 @@
 
 <p><%= notice %></p>
 
-<table>
-<% @tsubuyakis.each do |tsubuyaki| %>
-  <tr>
-    <td><%= tsubuyaki.content %></td><tr>
-    <td><%= link_to '詳細', tsubuyaki_path(tsubuyaki.id) %></td>
-    <td><%= link_to "編集", edit_tsubuyaki_path(tsubuyaki.id), data: { confirm: '本当に編集していいですか？' } %></td>
-    <td><%= link_to '削除', tsubuyaki_path(tsubuyaki.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
-  </tr>
-<% end %>
-</table>
+  <table>
+  <% @tsubuyakis.each do |tsubuyaki| %>
+    <tr>
+      <td><%= tsubuyaki.content %></td>
+      </tr> 
+    <tr>
+      <td><%= link_to '詳細', tsubuyaki_path(tsubuyaki.id) %></td>
+      <td><%= link_to "編集", edit_tsubuyaki_path(tsubuyaki.id), data: { confirm: '本当に編集していいですか？' } %></td>
+      <td><%= link_to '削除', tsubuyaki_path(tsubuyaki.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
+    </tr>
+  <% end %>
+  </table>
 <br>
-
 <%= link_to '新しく投稿する', new_tsubuyaki_path %>
