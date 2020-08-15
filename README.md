@@ -1,24 +1,10 @@
-# README
+1.Rubyのバージョン
+　　ruby 2.6.5
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2.Railsのバージョン
+   Rails 5.2.4.3
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3.アプリの説明
+　　DIVER　 Ruby on Rails入門シリーズ課題【TwetterClone】作成のアプリ
+　　・Twitterのように投稿機能を実装。
+　　・ログイン機能等はなし。
