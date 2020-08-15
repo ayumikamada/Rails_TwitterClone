@@ -80,6 +80,7 @@ body {
 
  .balloon1-left {
     position: relative;
+    width: 700px;
     display: inline-block;
     margin: 1.5em 0 1.5em 15px;
     padding: 7px 10px;
@@ -88,6 +89,7 @@ body {
     color: #555;
     font-size: 16px;
     background: #e0edff;
+    border-radius: 5px;
   }
   
   .balloon1-left:before {
