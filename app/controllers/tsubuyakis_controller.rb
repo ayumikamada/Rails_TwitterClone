@@ -1,6 +1,6 @@
 class TsubuyakisController < ApplicationController
 
-  before_action :set_tsubuyaki, only: [:show, :edit, :update, :destroy]
+  before_action :set_tsubuyaki, only: [:edit, :update, :destroy]
 
   def top
   end
@@ -29,9 +29,6 @@ class TsubuyakisController < ApplicationController
         render :new
       end
     end
-  end
-
-  def show
   end
 
   def edit
