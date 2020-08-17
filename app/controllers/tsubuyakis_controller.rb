@@ -2,9 +2,6 @@ class TsubuyakisController < ApplicationController
 
   before_action :set_tsubuyaki, only: [:edit, :update, :destroy]
 
-  def top
-  end
-
   def index
     @tsubuyakis = Tsubuyaki.all.order(created_at: :desc)
   end
