@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'tsubuyakis#top'
+  root 'top#index'
   resources :tsubuyakis do
     collection do
       post :confirm
